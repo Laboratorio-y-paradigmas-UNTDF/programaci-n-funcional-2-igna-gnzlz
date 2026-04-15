@@ -1,0 +1,22 @@
+{
+  "tests": [
+    {"name": "Ej01 — Pipeline filter/map/reduce (TS)", "setup": "cd typescript && npm install", "run": "cd typescript && npx vitest run tests/ej01.test.ts", "timeout": 10, "points": 5},
+    {"name": "Ej02 — Composición pipe/compose (TS)", "setup": "", "run": "cd typescript && npx vitest run tests/ej02.test.ts", "timeout": 10, "points": 6},
+    {"name": "Ej03 — Inmutabilidad con spread (TS)", "setup": "", "run": "cd typescript && npx vitest run tests/ej03.test.ts", "timeout": 10, "points": 4},
+    {"name": "Ej04 — Pipeline con ->> (Clj)", "setup": "cd clojure && lein deps", "run": "cd clojure && lein test tp04.ej04-test", "timeout": 10, "points": 5},
+    {"name": "Ej05 — flatMap y reduce (TS)", "setup": "", "run": "cd typescript && npx vitest run tests/ej05.test.ts", "timeout": 10, "points": 5},
+    {"name": "Ej06 — Partial application (TS)", "setup": "", "run": "cd typescript && npx vitest run tests/ej06.test.ts", "timeout": 10, "points": 6},
+    {"name": "Ej07 — Partial en Clojure (Clj)", "setup": "", "run": "cd clojure && lein test tp04.ej07-test", "timeout": 10, "points": 5},
+    {"name": "Ej08 — Currying (TS)", "setup": "", "run": "cd typescript && npx vitest run tests/ej08.test.ts", "timeout": 10, "points": 6},
+    {"name": "Ej09 — Validadores currying (Clj)", "setup": "", "run": "cd clojure && lein test tp04.ej09-test", "timeout": 10, "points": 5},
+    {"name": "Ej10 — Result y validación (TS)", "setup": "", "run": "cd typescript && npx vitest run tests/ej10.test.ts", "timeout": 10, "points": 7},
+    {"name": "Ej11 — Middleware como HOF (TS)", "setup": "", "run": "cd typescript && npx vitest run tests/ej11.test.ts", "timeout": 10, "points": 6},
+    {"name": "Ej12 — Recursión de cola (Clj)", "setup": "", "run": "cd clojure && lein test tp04.ej12-test", "timeout": 10, "points": 6},
+    {"name": "Ej13 — Recursión de cola (TS)", "setup": "", "run": "cd typescript && npx vitest run tests/ej13.test.ts", "timeout": 10, "points": 5},
+    {"name": "Ej14 — Memoization (TS)", "setup": "", "run": "cd typescript && npx vitest run tests/ej14.test.ts", "timeout": 10, "points": 5},
+    {"name": "Ej15 — Lazy sequences (Clj)", "setup": "", "run": "cd clojure && lein test tp04.ej15-test", "timeout": 10, "points": 5},
+    {"name": "Ej16 — DSL data-driven (Clj)", "setup": "", "run": "cd clojure && lein test tp04.ej16-test", "timeout": 10, "points": 5},
+    {"name": "Ej17 — Integrador TypeScript", "setup": "", "run": "cd typescript && npx vitest run tests/ej17.test.ts", "timeout": 10, "points": 7},
+    {"name": "Ej18 — Integrador Clojure", "setup": "", "run": "cd clojure && lein test tp04.ej18-test", "timeout": 10, "points": 7}
+  ]
+}
