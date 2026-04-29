@@ -16,7 +16,10 @@ describe("memoize", () => {
   });
   it("cache funciona con counter", () => {
     let calls = 0;
-    const expensive = (n: number) => { calls++; return n * 2; };
+    const expensive = (n: number) => {
+      calls++;
+      return n * 2;
+    };
     const mExpensive = memoize(expensive);
     mExpensive(5);
     mExpensive(5);
@@ -25,7 +28,10 @@ describe("memoize", () => {
   });
   it("diferentes args se calculan", () => {
     let calls = 0;
-    const fn = (n: number) => { calls++; return n; };
+    const fn = (n: number) => {
+      calls++;
+      return n;
+    };
     const mFn = memoize(fn);
     mFn(1);
     mFn(2);
